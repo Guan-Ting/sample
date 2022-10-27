@@ -23,7 +23,7 @@ public class CustomerController {
     private CustomerRepository customerRepository;
     private DataSource dataSource;
 
-    static final int BATCH_SIZE = 1000;
+    static final int BATCH_SIZE = 10;
     @Autowired
     public  void setCustomerRepository(CustomerRepository customerRepository){
         this.customerRepository=customerRepository;
@@ -100,10 +100,11 @@ public class CustomerController {
 
     }
 
+
     private List<Customer> prepareCustomerList(){
         List<Customer> customers=new ArrayList<>();
         for(int i=0; i<BATCH_SIZE ;i++ ){
-            customers.add(new Customer("firstName1","lastName1"));
+            customers.add(new Customer("Peter"+i,"lastName"));
         }
         return customers;
     }
