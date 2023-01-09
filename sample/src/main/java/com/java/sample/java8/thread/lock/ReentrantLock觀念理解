@@ -1,0 +1,8 @@
+(1)什麼是可重入，什麼是可重入鎖? 它用來解決什麼問題?
+(2)ReentrantLock的核心是AQS，那麼它怎麼來實現的，繼承嗎? 說說其類內部結構關係。.
+(3)ReentrantLock是如何實現公平鎖的?
+(4)ReentrantLock是如何實現非公平鎖的?
+(5)ReentrantLock默認實現的是公平還是非公平鎖?
+(6)使用ReentrantLock實現公平和非公平鎖的示例?
+(7)ReentrantLock和Synchronized的對比?
+

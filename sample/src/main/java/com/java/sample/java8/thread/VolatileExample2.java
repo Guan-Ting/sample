@@ -4,6 +4,7 @@ package com.java.sample.java8.thread;
 public class VolatileExample2 {
 
     //volatile 可確保Visibility
+    //此變數會改為不使用各執行緒的working memory，永遠從主記憶體做存取與讀寫。
 
 
     static volatile  int num;
