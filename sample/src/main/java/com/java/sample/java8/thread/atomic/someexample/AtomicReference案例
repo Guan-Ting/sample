@@ -1,0 +1,3 @@
+案例包含
+1.AtomicReference 基本使用
+2.volatile無法解決原子性問題
