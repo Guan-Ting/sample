@@ -1,4 +1,4 @@
-package com.java.sample.entity;
+package com.java.sample.java8.streamApiPractice;
 
 
 
