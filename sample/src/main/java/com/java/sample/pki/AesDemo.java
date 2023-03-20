@@ -20,7 +20,6 @@ public class AesDemo {
         System.out.println("加密:" + encryptAES);
         String s = decryptAES(encryptAES, key,transformation, algorithm);
         System.out.println("解密:" + s);
-
     }
 
     private static String encryptAES (String input , String key , String transformation,
