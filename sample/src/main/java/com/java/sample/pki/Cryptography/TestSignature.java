@@ -10,6 +10,7 @@ public class TestSignature {
         KeyPair keypair =keyPairGenerator.generateKeyPair();
 
         Signature signature =Signature.getInstance("SHA256WithRSA");
+        //私鑰簽章
         signature.initSign(keypair.getPrivate(),secureRandom);
 
         byte[] data = "abcdefghijklmnopqrstuvxyz".getBytes("UTF-8");
@@ -17,6 +18,7 @@ public class TestSignature {
         byte[] digitalSignature =signature.sign();
 
         Signature signature2 = Signature.getInstance("SHA256WithRSA");
+        //公鑰去驗章
         signature2.initVerify(keypair.getPublic());
         signature2.update(data);
         boolean verified =signature2.verify(digitalSignature);
