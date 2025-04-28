@@ -1,12 +1,10 @@
-package com.java.sample.jrsys;
-import org.bouncycastle.asn1.*;
+package com.java.sample.pki;
 import org.bouncycastle.asn1.x509.Attribute;
 import org.bouncycastle.asn1.x509.SubjectDirectoryAttributes;
 import org.bouncycastle.asn1.ASN1InputStream;
 import org.bouncycastle.asn1.ASN1OctetString;
 import org.bouncycastle.asn1.ASN1Sequence;
 import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.x509.SubjectDirectoryAttributes;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -14,7 +12,6 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 
 /**
  * ClassName: resolveCert

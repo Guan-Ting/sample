@@ -1,8 +1,5 @@
-package com.java.sample.jrsys;
+package com.java.sample.pki;
 
-import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
-import org.jasypt.iv.RandomIvGenerator;
-import org.jasypt.salt.RandomSaltGenerator;
 import org.jasypt.util.text.StrongTextEncryptor;
 
 /**
